@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Snoop - Open Redirect Tester",
+  "version": "1.0",
+  "description": "Detects open redirects on visited websites.",
+  "permissions": ["tabs", "webRequest", "webRequestBlocking"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}
