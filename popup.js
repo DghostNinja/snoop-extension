@@ -1,21 +1,29 @@
-document.getElementById("scan").addEventListener("click", function() {
-  chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-    let currentTab = tabs[0];
-    chrome.scripting.executeScript({
-      target: { tabId: currentTab.id },
-      function: detectRedirects
-    });
-  });
-});
+document.addEventListener("DOMContentLoaded", function () {
+    const statusElement = document.getElementById("status");
+    const toggleButton = document.getElementById("toggle");
 
-function detectRedirects() {
-  let redirectParams = ["redirect", "url", "next", "return", "returnTo", "destination", "goto"];
-  let currentUrl = window.location.href;
-  
-  for (let param of redirectParams) {
-    if (new URL(currentUrl).searchParams.has(param)) {
-      document.getElementById("result").innerText = "[!!] Open Redirect Found!";
-      console.warn(`[!!] Possible Open Redirect: ${currentUrl}`);
-    }
-  }
-}
+    // Load saved state
+    chrome.storage.local.get(["enabled"], function (result) {
+        if (result.enabled === false) {
+            statusElement.textContent = "Disabled";
+            statusElement.style.color = "red";
+        } else {
+            statusElement.textContent = "Active";
+            statusElement.style.color = "green";
+        }
+    });
+
+    // Toggle button functionality
+    toggleButton.addEventListener("click", function () {
+        chrome.storage.local.get(["enabled"], function (result) {
+            const newState = !result.enabled;
+            chrome.storage.local.set({ enabled: newState }, function () {
+                statusElement.textContent = newState ? "Active" : "Disabled";
+                statusElement.style.color = newState ? "green" : "red";
+            });
+
+            // Send message to background.js to enable/disable detection
+            chrome.runtime.sendMessage({ action: newState ? "enable" : "disable" });
+        });
+    });
+});
