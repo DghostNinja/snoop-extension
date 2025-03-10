@@ -47,7 +47,7 @@ http://127.0.0.1:5000/redirect?url=http://evil.com
 The extension should detect and display the redirect parameter (`url`).
 
 ## N.B
-You can add more redirect parameters to the contentscript.js {commonParams} for more efficient detection.
+You can add more redirect parameters to the **contentscript.js {commonParams}** for more efficient detection.
 
 
 ### Folder Structure
