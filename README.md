@@ -57,6 +57,8 @@ The extension should detect and display the redirect parameter (`url`).
 │── icon.png
 │── exet.gif
 ```
+### N.B
+You can add more redirect parameters to the contentscript.js {commonParams} for more efficient detection.
 
 ## Contributing
 Feel free to submit issues or pull requests for improvements!
