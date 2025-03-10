@@ -49,7 +49,7 @@ The extension should detect and display the redirect parameter (`url`).
 ### Folder Structure
 
 ```
-/snoop-open-redirect-tester
+/snoop-extension
 │── manifest.json
 │── background.js
 │── popup.html
