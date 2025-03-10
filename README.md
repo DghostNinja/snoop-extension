@@ -43,6 +43,8 @@ http://127.0.0.1:5000/redirect?url=http://evil.com
 ```
 The extension should detect and display the redirect parameter (`url`).
 
+###Folder Structure
+
 ```
 /snoop-open-redirect-tester
 │── manifest.json
