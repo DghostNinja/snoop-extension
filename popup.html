@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Open Redirect Tester</title>
+  <style>
+    body { font-family: Arial, sans-serif; width: 320px; padding: 10px; }
+    h3 { margin-top: 0; }
+    #controls { margin-bottom: 10px; }
+    ul { list-style: none; padding: 0; max-height: 200px; overflow-y: auto; }
+    li { margin: 5px 0; word-wrap: break-word; }
+    button { margin-left: 10px; }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <label>
+      <input type="checkbox" id="toggleSwitch"> Enable Detection
+    </label>
+    <button id="clearLogs">Clear Logs</button>
+  </div>
+  <h3>Detected Redirect Parameters</h3>
+  <ul id="results"></ul>
+  <script src="popup.js"></script>
+</body>
+</html>
+
