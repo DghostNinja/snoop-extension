@@ -37,7 +37,7 @@ You can use a local Flask server to test the extension with open redirect parame
 
 **Link:** 
 ```bash
-  https://github.com/DghostNinja/vulnerable-redirect-app/blob/main/Dockerfile
+  https://github.com/DghostNinja/vulnerable-redirect-app
 ```
 
 ### Example Test URL:
