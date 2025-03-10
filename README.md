@@ -51,10 +51,7 @@ The extension should detect and display the redirect parameter (`url`).
 │── background.js
 │── popup.html
 │── popup.js
-│── icons/
-│   ├── icon-16.png
-│   ├── icon-48.png
-│   ├── icon-128.png
+│── icon.png
 ```
 
 ## Contributing
