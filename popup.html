@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open Redirect Tester</title>
+    <style>
+        body { font-family: Arial, sans-serif; width: 320px; padding: 10px; }
+        label { display: flex; align-items: center; font-weight: bold; }
+        ul { list-style: none; padding: 0; max-height: 200px; overflow-y: auto; }
+        li { margin: 5px 0; word-wrap: break-word; }
+    </style>
+</head>
+<body>
+    <label>
+        <input type="checkbox" id="toggleButton"> Enable Redirect Detection
+    </label>
+    <h3>Detected Redirects</h3>
+    <ul id="redirectList"></ul>
+    <script src="popup.js"></script>
+</body>
+</html>
+
