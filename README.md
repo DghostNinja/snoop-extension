@@ -1,6 +1,6 @@
 # Snoop Open Redirect Param Extension
 
-Snoop Open Redirect Tester is a browser extension that scans webpages for potential open redirect parameters. It monitors URLs for common redirect parameters and detects potential security vulnerabilities.
+Snoop Open Redirect Param Extension is a browser extension that scans webpages for potential open redirect parameters. It monitors URLs for common redirect parameters and detects potential security vulnerabilities.
 
 ## Features
 - **Detects open redirect parameters** from visited webpages.
