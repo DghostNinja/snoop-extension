@@ -34,7 +34,7 @@ Snoop Open Redirect Tester is a browser extension that scans webpages for potent
 You can use a local Flask server to test the extension with open redirect parameters or Clone and run the Docker locally
 
 ```bash
-***Link:*** https://github.com/DghostNinja/vulnerable-redirect-app/blob/main/Dockerfile
+**Link:** https://github.com/DghostNinja/vulnerable-redirect-app/blob/main/Dockerfile
 ```
 
 ### Example Test URL:
@@ -43,7 +43,7 @@ http://127.0.0.1:5000/redirect?url=http://evil.com
 ```
 The extension should detect and display the redirect parameter (`url`).
 
-###Folder Structure
+### Folder Structure
 
 ```
 /snoop-open-redirect-tester
