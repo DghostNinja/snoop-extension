@@ -32,9 +32,9 @@ Snoop Open Redirect Param Extension is a browser extension that scans webpages f
 
 ## Testing the Extension
 You can use a local Flask server to test the extension with open redirect parameters or Clone and run the Docker locally
-
+**Link:** 
 ```bash
-**Link:** https://github.com/DghostNinja/vulnerable-redirect-app/blob/main/Dockerfile
+  https://github.com/DghostNinja/vulnerable-redirect-app/blob/main/Dockerfile
 ```
 
 ### Example Test URL:
@@ -52,6 +52,7 @@ The extension should detect and display the redirect parameter (`url`).
 │── popup.html
 │── popup.js
 │── icon.png
+│── exet.gif
 ```
 
 ## Contributing
